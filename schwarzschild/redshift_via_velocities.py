@@ -24,8 +24,6 @@ def plot(fp, label, ax, fig, flag=False):
 
     im = ax.imshow(g, extent=(np.amin(data[:, 0]), np.amax(data[:, 0]),
                               np.amin(data[:, 1]), np.amax(data[:, 1])), norm=norm, cmap=cmap, interpolation='nearest')
-    #im = ax.contourf(g, extent=(np.amin(data[:, 0]), np.amax(data[:, 0]),
-    #                            np.amin(data[:, 1]), np.amax(data[:, 1])), norm=norm, cmap=cmap, vmin=0.52, vmax=1.2)
 
     if flag:
         print('huh')
